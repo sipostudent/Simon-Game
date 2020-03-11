@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon | Memory Game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--Import fontawesome.css-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import bootstrap.min.css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+  <!--Import style.css-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!--Import favicon-->
+  <link rel="shortcut icon" type="image/png" href="assets/img/javascript-favicon.png" />
+  <!--Project title-->
+  <title>Simon | Memory Game</title>
 </head>
+
 <body>
-    <h1>first commit</h1>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-sm p-3">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Simon <i class="fab fa-js"></i></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="https://sipo.io/" target="_blank" rel="noopener" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item active">
+            <a href="https://github.com/sipostudent" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+          </li>
+          <li class="nav-item active">
+            <a href="https://en.wikipedia.org/wiki/Simon_(game)" target="_blank" rel="noopener"
+              class="nav-link">Wikipedia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Controls & Score -->
+  <header id="controls-score" class="py-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="switches">
+            <span>Power</span> <label class="myCheckbox"></label><input type="checkbox" class="toggle" id="on" />
+            <button class="btn btn-default" id="start">Start/Reset</button>
+            <input type="checkbox" class="toggle" id="strict" />
+            <span>Strict</span>
+          </div>
+          <div class="lead" id="attempt"></div>
+          <div class="score-counter">Score</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Play Buttons -->
+  <section id="play-buttons" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card red mb-4">
+            <div id="btnRed" class="card-body btnGame" data-value="1">
+              <h5>P</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card yellow mb-4">
+            <div id="btnYellow" class="card-body btnGame" data-value="2">
+              <h5>L</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card green mb-4">
+            <div id="btnGreen" class="card-body btnGame" data-value="3">
+              <h5>A</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card blue mb-4">
+            <div id="btnBlue" class="card-body btnGame" data-value="4">
+              <h5>Y</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Accordion -->
+  <div id="info-accordion">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-2">
+          <!-- <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+            <i class="fas fa-chevron-down"></i>
+          </a> -->
+          <span class="rules">Rules</span>
+        </h5>
+      </div>
+      <div id="collapse1" class="collapse">
+        <div class="card-body">
+          1. Replicate the pattern - showed by Simon. With each round, a new step
+          is added to the pattern making the game much more difficult.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-2">
+          <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </h5>
+      </div>
+      <div id="collapse2" class="collapse">
+        <div class="card-body">
+          1. Repeat ten patterns - and Simon will salute you with a
+          congratulations message in acknowledgement of your triumph.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h5 class="mb-2">
+          <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </h5>
+      </div>
+      <div id="collapse3" class="collapse">
+        <div class="card-body">
+          2. Strict mode - restarts the game whenever an incorrect field is
+          chosen.
+        </div>
+      </div>
+    </div>
+    <div class="card last-border">
+      <div class="card-header">
+        <h5 class="mb-2">
+          <a href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </h5>
+      </div>
+      <div id="collapse4" class="collapse">
+        <div class="card-body">
+          3. Normal mode - repeats the pattern subsequent to the
+          wrong button being pressed.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="mt-2 p-1">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            <span class="copy">&copy; <span id="year"></span> 2019 Created by Sipo Charles</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <!-- Import index.js -->
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
