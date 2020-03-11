@@ -3,7 +3,7 @@
   <img src="assets/img/simon-memory-game.png" width="600">
   <br>
     <br>
-  Simon Memory Game
+  Simon - Memory Game
   <br>
 </h1>
 
