@@ -9,4 +9,4 @@
 
 <h3 align="center">Interactive Front End Development</h3>
 
-<h4 align="center">A memory game which requires a user to replicate a continually growing sequence of signals.</h4>
+<h4 align="center">A Memory Game Which Requires a Player to Replicate a Continually Growing Sequence of Signals</h4>
