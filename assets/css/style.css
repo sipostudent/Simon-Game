@@ -32,6 +32,8 @@ body {
     margin-top: 12px; }
   #controls-score .score-counter {
     margin-top: 4px; }
+  #controls-score .lead {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6); }
 
 #play-buttons {
   text-transform: uppercase;
