@@ -172,6 +172,7 @@ function buttonEffect(value) {
       case 1:
         sound1.play();
         btnRed.style.backgroundColor = "rgba(245, 245, 245, 0.3686274509803922)";
+        
         break;
       case 2:
         sound2.play();
@@ -200,9 +201,16 @@ function buttonEffect(value) {
 // Buttons original state
 function clearColor() {
   btnRed.style.backgroundColor = "#ea4335";
+  btnRed.style.boxShadow = "-10px -10px 10px rgba(0,0,0,0.2),15px 15px 15px rgba(0,0,0,0.1),inset -5px -5px 5px rgba(0,0,0,0.2), inset 5px 5px 5px rgba(0,0,0,0.1)";
+  
   btnYellow.style.backgroundColor = "#fbbc05";
+  btnYellow.style.boxShadow = "-10px -10px 10px rgba(0,0,0,0.2),15px 15px 15px rgba(0,0,0,0.1),inset -5px -5px 5px rgba(0,0,0,0.2), inset 5px 5px 5px rgba(0,0,0,0.1)";
+
   btnGreen.style.backgroundColor = "#34a853";
+  btnGreen.style.boxShadow = "-10px -10px 10px rgba(0,0,0,0.2),15px 15px 15px rgba(0,0,0,0.1),inset -5px -5px 5px rgba(0,0,0,0.2), inset 5px 5px 5px rgba(0,0,0,0.1)";
+
   btnBlue.style.backgroundColor = "#4285f4";
+  btnBlue.style.boxShadow = "-10px -10px 10px rgba(0,0,0,0.2),15px 15px 15px rgba(0,0,0,0.1),inset -5px -5px 5px rgba(0,0,0,0.2), inset 5px 5px 5px rgba(0,0,0,0.1)";
 }
 
 // Buttons illuminated state

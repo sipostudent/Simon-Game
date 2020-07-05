@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Reem+Kufi&display=swap");
 body {
   font-family: "Reem Kufi", sans-serif;
   background-image: linear-gradient(120deg, #ea4335, #fbbc05, #34a853, #4285f4);
@@ -23,17 +23,17 @@ body {
     border-radius: 60px;
     border: none;
     background: rgba(245, 245, 245, 0.368627451);
-    text-transform: capitalize;
-    font-family: 'Nunito Sans', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 7px; }
+    text-transform: uppercase;
+    color: #767676 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px; }
   #controls-score #start {
     color: #ffffff; }
   #controls-score #switches {
     margin-top: 12px; }
   #controls-score .score-counter {
     margin-top: 4px; }
-  #controls-score .lead {
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.6); }
 
 #play-buttons {
   text-transform: uppercase;
@@ -44,8 +44,7 @@ body {
     border-radius: 60px;
     border: 1px solid transparent;
     text-transform: capitalize;
-    font-family: 'Nunito Sans', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 7px; }
+    box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(0, 0, 0, 0.2), inset 5px 5px 5px rgba(0, 0, 0, 0.1); }
   #play-buttons .card-body {
     border-radius: 60px;
     border: 1px solid transparent; }
@@ -63,7 +62,9 @@ body {
   #info-accordion .card {
     border: none;
     background: transparent;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
     border-top: 1px solid rgba(245, 245, 245, 0.368627451);
     border-radius: 0px; }
   #info-accordion .last-border {
@@ -81,6 +82,10 @@ body {
 
 #main-footer {
   margin-top: auto;
-  font-family: 'Nunito Sans', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
   #main-footer p {
-    color: #ffffff; }
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 13px; }
+
+/*# sourceMappingURL=style.css.map */
