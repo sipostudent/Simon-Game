@@ -3,7 +3,7 @@
   <img src="assets/img/js-simon.png" width="600">
   <br>
     <br>
-  Simon - Memory Game
+  JavaScript - Simon
   <br>
 </h1>
 
