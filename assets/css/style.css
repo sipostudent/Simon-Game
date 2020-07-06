@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
 body {
   font-family: "Reem Kufi", sans-serif;
   background-image: linear-gradient(120deg, #ea4335, #fbbc05, #34a853, #4285f4);
@@ -25,7 +26,7 @@ body {
     background: rgba(245, 245, 245, 0.368627451);
     text-transform: uppercase;
     color: #767676 !important;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-weight: bold;
     font-size: 13px; }
   #controls-score #start {
@@ -62,9 +63,9 @@ body {
   #info-accordion .card {
     border: none;
     background: transparent;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     border-top: 1px solid rgba(245, 245, 245, 0.368627451);
     border-radius: 0px; }
   #info-accordion .last-border {
@@ -82,10 +83,10 @@ body {
 
 #main-footer {
   margin-top: auto;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Cairo', sans-serif; }
   #main-footer p {
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 13px; }
 
 /*# sourceMappingURL=style.css.map */
