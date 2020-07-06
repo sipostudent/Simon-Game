@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Reem+Kufi&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Reem+Kufi&display=swap");
 body {
   font-family: "Reem Kufi", sans-serif;
   background-image: linear-gradient(120deg, #ea4335, #fbbc05, #34a853, #4285f4);
